@@ -1,0 +1,656 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear{
+	clear: both;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+strong, b {
+	color: #444;
+}
+/* END CSS RESET */
+
+body {
+	line-height: 1;
+	font-family: Arial,Sans-Serif;
+	background-image: url("images/bg.png");
+}
+
+/* CSS ME */
+#container {
+	width: 902px;
+	background-color: white;
+	border: 1px solid #C9C9C9;
+	border-radius: 2px;
+	margin: 10px auto;
+	box-shadow: 0px 0px 3px #B2B2B2;
+}
+#container img[name=cctv] {
+	position: absolute;
+	right: 10px;
+	top: -15px;
+	width: 60px;
+}
+a[name=back] {
+	font-size: 12px;
+	margin-left: 10px;
+	display: inline-block;
+	margin-top: 8px;
+	color: #444;
+	text-align: left;
+}
+a[name=back]:hover {
+	color: blue;
+	text-decoration: underline;	
+}
+/* HEADER.PHP */
+header {
+	border-bottom: 1px solid #C9C9C9;
+	padding: 2px 0px;
+}
+header img {
+	width: 900px;
+}
+.title {
+	background-image: url("images/bg-child.png");
+	padding: 7px;
+	border-bottom: 1px solid #C9C9C9;
+}
+.title h1 {
+	text-align: center;
+	color: #666;
+}
+/* FOOTER.PHP */
+footer {
+	padding: 7px;
+	border-top: 1px solid #D9D9D9;
+	text-align: center;
+	font-size: 13px;
+	color: #555;
+}
+footer a {
+	color: #3D8EB9;
+}
+/* INDEX.PHP */
+.main-index {
+	background-image: url("images/bg-voting.jpg");
+	background-size: cover;
+	background-position: 0px -30px;
+}
+.main-index h3 {
+	font-size: 22px;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	color: #444;
+	font-weight: bold;
+}
+.main-index .pilih {
+	width: 280px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+}
+.main-index .pilih img {
+	width: 255px;
+	box-shadow: 0px 0px 5px #D6D6D6;
+}
+.main-index .pilih .bg-pilih {
+	background-color: #111;
+	opacity: 0.5;
+	position: absolute;
+	height: 49px;
+	width: 255px;
+	margin-top: -50px;
+	margin-left: 13px;
+}
+.main-index .pilih a {
+	position: absolute;
+	margin-top: 165px;
+	margin-left: -100px;
+	display: inline-block;
+	background-color: #666;
+	opacity: 0.7;
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 2px;	
+	color: white;
+	transition: 0.3s;
+	font-weight: bold;
+}
+.main-index .pilih a:hover {
+	opacity: 1;
+	background-color: #3498DB;
+	box-shadow: 0px 0px 3px #D7D7D7;
+}
+.main-index .pilih p.calon {
+	color: white;
+	position: absolute;
+	margin-top: -37px;
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.main-index .pilih p.no-urut {
+	color: white;
+	position: absolute;
+	font-size: 13px;
+	margin-top: -20px;
+	margin-left: 20px;
+
+}
+.main-index .footer-index {
+	height: 100px;
+	padding: 10px 23px;
+	background-color: rgba(34,34,34, 0.7);
+}
+.main-index .footer-index .info {
+	float: left;
+	width: 555px;
+	border-bottom: 1px solid #F7F7F7;
+}
+.main-index .footer-index .info .column {
+	display: inline-block;
+	padding-right: 20px;
+	border-right: 1px solid white;
+	text-align: center;
+	color: white;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.main-index .footer-index .info .column h2 {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-top: 10px;
+}
+.main-index .footer-index .info .column p {
+	font-size: 15px;
+	padding-bottom: 9px;
+}
+.main-index .footer-index .info .last-coblos {
+	display: inline-block;
+	color: white;
+	width: 380px;
+	text-align: center;
+}
+.main-index .footer-index .info .last-coblos h4 {
+	font-size: 17px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.main-index .footer-index .info .last-coblos p {
+	font-size: 15px;
+}
+.main-index .footer-index .login {
+	width: 255px;
+	float: right;
+}
+.main-index .footer-index .login a {
+	background-color: #FF770B;
+	text-align: center;
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	border-radius: 3px;
+	opacity: 0.8;
+	transition: 0.2s;
+}
+.main-index .footer-index .login a[name=video] {
+	background-color: #A6A6A6;
+	margin-top: 4px;
+	font-size: 15px;
+}
+.main-index .footer-index .login a:hover {
+	opacity: 1;
+
+}
+/* USER ; LOGIN.PHP */
+.main-login {
+	background-image: url("images/bg-voting.jpg");
+	background-size: cover;
+	background-position: 0px -60px;
+	padding-bottom: 105px;
+}
+.main-login form {
+	box-shadow: 0px 0px 5px #C2C2C2;
+	padding: 10px;
+	border: 1px solid #A2A2A2;
+	background-color: #F5F5F5;
+	border-radius: 4px;
+	width: 350px;
+	margin: 20px auto;
+	margin-top: 50px;
+}
+.main-login form h3 {
+	background-color: #C5C5C5;
+	padding: 5px;
+	font-size: 17px;
+	color: white;
+}
+.main-login form table {
+	margin-top: 10px;
+}
+.main-login form table td {
+	font-size: 12px;
+	color: #444;
+}
+.main-login form table td[name=left] {
+	margin-right: 30px;
+	margin-left: 13px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.main-login form table td[name=center] {
+	padding-right: 10px;	
+}
+.main-login form input {
+	padding: 3px;
+	background-color: #F9F9F9;
+	border: 1px solid #A1A1A1;
+	width: 200px;
+	font-size: 12px;
+}
+.main-login form input[name=password] {
+	font-size: 10px;
+}
+.main-login form input[name=submit] {
+	background-color: #E9E9E9;
+	margin-bottom: 5px;
+}
+.main-login form input[name=submit]:hover {
+	cursor: pointer;
+	border-color: blue;
+}
+/* USER ; INDEX.PHP */
+.main-user-index {
+	height: 400px;
+}
+nav {
+	float: left;
+	padding: 10px;
+	height: 400px;
+	width: 220px; 
+	background: #F9F9F9; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(left, #F9F9F9 ,#E9E9E9); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #F9F9F9, #E9E9E9); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #F9F9F9, #E9E9E9); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #F9F9F9 ,#E9E9E9); /* Standard syntax */
+	border-right: 1px solid #C2C2C2;
+}
+nav .my-profile, nav .pusat-bantuan {
+	background-color: white;
+	border: 1px solid #B2B2B2;
+	border-radius: 5px;
+	padding: 7px 0px;
+}
+nav .my-profile h1 {
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: #444;
+}
+nav .my-profile h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #444;
+	margin-bottom: 5px;
+	padding: 0px 10px;
+}
+nav .my-profile h3 {
+	font-size: 12px;
+	color: #555;
+	padding: 0px 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #B2B2B2;
+}
+nav .my-profile ul, nav .pusat-bantuan ul  {
+	margin-left: 25px;
+	margin-top: 5px;
+	font-size: 13px;
+	font-weight: bold;
+}
+nav .my-profile a,  nav .pusat-bantuan a {
+	color: #235a81;
+	padding: 3px 2px;
+	display: inline-block;
+	width: 150px;
+	transition: 0.1s;
+	border-radius: 2px;
+}
+nav .my-profile a:hover,  nav .pusat-bantuan a:hover {
+	background-color: #F1F1F1;
+}
+nav .pusat-bantuan {
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.main-user-index .content-index {
+	margin: 10px;
+	padding-top: 5px;
+	padding-left:2px;
+	width: 660px;
+	height: 380px;
+	border-radius: 3px;
+	border: 1px solid #D8D8D8;
+	background-color: #F2F2F2;
+	float: right;
+}
+.main-user-index .content-index .coblos {
+	width: 200px;
+	margin: 5px 9px;
+	float: left;
+	border-radius: 4px;
+}
+.main-user-index .content-index .coblos img {
+	width: 200px;
+	border-radius: 4px;
+}
+.main-user-index .content-index .coblos form {
+	position: absolute;
+	margin-top: -33px;
+}
+.main-user-index .content-index .coblos form input[type=submit] {
+	margin-left: 120px;
+	background-color: #555;
+	opacity: 0.8;
+	border-radius: 2px;
+	border: none;
+	padding: 3px 10px;
+	font-weight: bold;
+	color: white;
+	transition: 0.2s;
+}
+.main-user-index .content-index .coblos form input[type=submit]:hover {
+	cursor: pointer;
+	background-color: orange;
+	opacity: 1;
+	box-shadow: 0px 0px 5px #E9E9E9;
+}
+.main-user-index .content-index .coblos form input[id=coblos] {
+	background-color: orange;
+	opacity: 1;
+}
+.main-user-index .content-index .coblos form input[id=coblos]:hover {
+	cursor: default;
+	box-shadow: none;
+}
+
+.main-user-index .content-index .coblos h6 {
+	position: absolute;
+	margin-top: -38px;
+	margin-left: 7px;
+	color: white;
+	background-color: #3498DB;
+	padding: 10px 13px;
+	border-radius: 50%;
+	border: 1px solid white;
+	opacity: 0.9;
+	box-shadow: 0px 0px 5px #B2B2B2;
+	font-weight: bold;
+}
+.main-user-index .content-index .suara-sekarang {
+	height: 100px;
+	background-color: white;
+	margin: 5px 9px;
+	border-radius: 3px;
+	margin-right: 11px;
+	border: 1px solid #D3D3D3;
+	padding: 10px;
+}
+.main-user-index .content-index .suara-sekarang h4 {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.main-user-index .content-index .suara-sekarang .progress {
+	width: 300px;
+	background-color: #F5F5F5;
+	border: 1px solid #E2E2E2;
+	margin-left: 20px;
+	opacity: 0.8;
+}
+.main-user-index .content-index .suara-sekarang p {
+	display: block;
+	background-color: lightgreen;
+	padding: 3px;
+	font-size: 12px;
+}
+.main-user-index .content-index .suara-sekarang img {
+	width: 92.5px;
+	position: absolute;
+	margin-top: -83px;
+	margin-left: 531px;
+}
+/* USER ; ADD-VOTER.PHP */
+.content-addvoter {
+	border: 1px solid #D8D8D8;
+	background-color: #F9F9F9;
+	border-radius: 3px;
+	width: 660px;
+	float: right;
+	margin: 10px;
+}
+.content-addvoter p {
+	text-align: center;
+	padding: 10px;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #D8D8D8;
+	font-weight: bold;
+	color: #555;
+}
+.main-addvoter form {
+	margin: 20px;
+	display: inline-block;
+	float: left;
+}
+.main-addvoter form label {
+	margin-right: 15px;
+	margin-bottom: 13px;
+	display: inline-block;
+	font-size: 14px;
+	color: #333;
+}
+.main-addvoter form input, .main-addvoter form select {
+	padding: 3px;
+	width: 200px;
+	font-size: 13px;
+	border: 1px solid #A2A2A2;
+	border-radius: 1px;
+}
+.main-addvoter form input[type=submit] {
+	transition: 0.2s;
+}
+.main-addvoter form input[type=submit]:hover {
+	cursor: pointer;
+	border-color: blue;
+	box-shadow: 0px 0px 3px #999;
+}
+.main-addvoter .info {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 300px;
+	height: 80px;
+	border: 1px solid #C5C5C5;
+	background-color: white;
+}
+.main-addvoter .info h6 {
+	font-size: 12px;
+	padding: 5px;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #D8D8D8;
+	color: #555;
+	font-weight: bold;
+	text-align: center;
+}
+.main-addvoter .info img {
+	width: 35px;
+	opacity: 0.8;
+	margin-top: 10px;
+	margin-left: 105px;
+}
+.main-addvoter .info .text-info {
+	display: inline-block;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	position: relative;
+	top: -10px;	
+}
+.main-addvoter .info .text-info h3 {
+	display: inline-block;
+	font-size: 22px;
+	color: #333;
+}
+/* MSG ; ERROR */
+p[name=msg-error],p[name=msg-success] {
+	padding: 3px;
+	font-size: 13px;
+	text-align: center;
+	color: #333;
+	margin-bottom: 5px;
+}
+p[name=msg-error] {
+	background-color: pink;
+}
+p[name=msg-success] {
+	background-color: #F3D89F;
+}
+/* VISIMISI */
+.main-visimisi-index {
+
+}
+.choice {
+	height: 50px; 
+	width: 300px;
+	background-color: pink;
+	margin: 150px auto;
+}
+.main-visimisi {
+	padding: 20px;
+	padding-bottom: 30px;
+}
+.biodata-calon, .content-visimisi {
+	background-color: #F8F8F8;
+	border: 1px solid #D8D8D8;
+}
+.biodata-calon {
+	height: 300px;
+	width: 300px;
+	border-right: none;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+}
+.biodata-calon h2 {
+	font-size: 18px;
+	margin-bottom: 12px;
+	color: #222;
+}
+.biodata-calon img {
+	width: 255px;
+	border-radius: 3px;
+	border: 1px solid white;
+	box-shadow: 0px 0px 5px #C2C2C2;
+}
+.biodata-calon h5 {
+	margin-top: 10px;
+	color: #F5F5F5;
+	font-size: 15px;
+	background-color: rgba(136,136,136, 0.5);
+	width: 254px;
+	margin: auto;
+	position: relative;
+	padding: 7px 10px;
+	top: -33px;
+	border-radius: 0px 0px 3px 3px;
+}
+.content-visimisi {
+	float: right;
+	height: 300px;
+	width: 560px;
+	padding: 10px;
+}
+.content-visimisi h3:first-child {
+	color: orange;
+}
+.content-visimisi h3 {
+	color: #3498DB;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.content-visimisi p, .content-visimisi li {
+	font-size: 14px;
+	color: #222;
+	line-height: 17px;
+}
+.content-visimisi li {
+	margin-left: 20px;
+}
+/* PENTUJUK.HTML */
+.main-petunjuk {
+	padding-bottom: 15px;
+}
+.main-petunjuk h2 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 20px 0px;
+	color: #333;
+}
+.video {
+	text-align: center;
+}
+.video video {
+	border: 1px solid white;
+	box-shadow: 0px 0px 5px #999;
+}
+
+
